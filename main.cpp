@@ -19,6 +19,16 @@ int main() {
     voyagerRoute.addWaypointAtBeginning(earth);
     voyagerRoute.addWaypointAtIndex(2, venus);
 
+    // my tests of an empty list
+    SpaceRoute<string> route;
+    route.traverseBackward();
+    route.traverseForward();
+    route.removeWaypointAtIndex(8);
+    route.removeWaypointAtEnd();
+    route.removeWaypointAtBeginning();
+    route.addWaypointAtIndex(4, venus);
+    route.print();
+
     cout << "Voyager Route (Forward):\n";
     voyagerRoute.traverseForward();
 
